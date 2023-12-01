@@ -1,0 +1,1 @@
+//ajaira jinish, korum na

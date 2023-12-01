@@ -1,0 +1,1 @@
+{"name":"Local: 4c","url":"/home/kabya-mithun-saha/Desktop/c/fopexam/2021/4c.cpp","tests":[{"id":1701460507730,"input":"abcdefabab","output":""},{"id":1701461663428,"input":"abcdefababcd","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/kabya-mithun-saha/Desktop/c/fopexam/2021/4c.cpp","group":"local","local":true}
