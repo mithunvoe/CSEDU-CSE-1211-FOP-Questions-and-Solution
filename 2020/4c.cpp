@@ -46,6 +46,11 @@ struct Vector
         ptr = (int *)realloc(ptr, n * sizeof(int));
         sz = n;
     }
+    void pop_back()
+    {
+        sz--;
+        ptr = (int *)realloc(ptr, sz * sizeof(int));
+    }
     int &operator[](int idx)
     {
         if (idx < 0 || idx >= sz)
@@ -65,14 +70,17 @@ void kire()
     v.push_back(3);
     v.push_back(4);
     v.push_back(5);
-    cout << v.size() << endl;
     // cout<<v[2];
     v[2] = 69;
     v.assign(3, 4);
-    v.resize(5);
-    for (int i = 0; i < 5; i++)
+    // v.resize(5);
+    v.push_back(5);
+    v.push_back(5);
+    v.pop_back();
+    cout << v.size() << endl;
+    for (int i = 0; i < v.size(); i++)
     {
-        cout << v[i];
+        cout << v[i]<<gap;
     }
 }
 
