@@ -16,5 +16,5 @@ int main()
         kire();
 
     }
-    return 0;
+    return ;
 }
