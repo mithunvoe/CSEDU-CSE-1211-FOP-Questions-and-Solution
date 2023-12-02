@@ -8,7 +8,7 @@ void kire()
     scanf("%d.%d %d.%d", &a, &b, &c, &d);
     printf("%d", a + c + (b + d) / 100);
     if ((b + d) % 100 != 0)
-        printf(".%d", (b + d) % 100);
+        printf(".%02d", (b + d) % 100);
 }
 
 int main()
