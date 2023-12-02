@@ -33,6 +33,11 @@ void kire()
     l2 = strlen(s2);
     reverse(s1, l1);
     reverse(s2, l2);
+    if ((l1 == 1 && s1[0] == '0') || (l2 == 1 && s2[0] == '0'))
+    {
+        printf("0");
+        return;
+    }
     int carry = 0, sm = 0, n = max(l1, l2);
     int k = 0;
     for (int i = 0; i < l1; i++)
