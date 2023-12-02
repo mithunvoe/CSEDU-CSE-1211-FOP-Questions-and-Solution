@@ -33,11 +33,14 @@ void kire()
             else
                 break;
             match = max(tmp, match);
-
         }
     }
-    int ans=sl-match+(match&1);
-    printf("%d", ans);
+    if (match & 1)
+        printf("%d", sl);
+    else
+        printf("%d", sl - match);
+    // int ans=sl-match+(match&1);
+    // printf("%d", ans);
 }
 
 int main()
