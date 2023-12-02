@@ -100,15 +100,15 @@ void kire()
     }
     // A.print_diagonal();
 
-    // printf("\n\n\n");
-    // A.rotat_anticlock();
-    // A.multiply(B);
+        // printf("\n\n\n");
+        // A.rotat_anticlock();
+
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%d ", A.value[i][j]);
-        }
+            printf("%d ", A.value[i][j]);   
+        }   
         printf("\n");
     }
 }
