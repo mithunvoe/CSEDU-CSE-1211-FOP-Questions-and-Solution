@@ -3,7 +3,7 @@
 
 void kire()
 {
-    printf("44\n");
+    
 }
 
 int main()
@@ -16,5 +16,4 @@ int main()
         kire();
 
     }
-    return ;
 }

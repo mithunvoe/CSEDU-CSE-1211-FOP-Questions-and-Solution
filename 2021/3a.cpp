@@ -3,7 +3,7 @@
 int gcd(int a, int b)
 {
     if (a == 0 || b == 0)
-        return 0;
+        return a + b;
     if (a % b == 0)
         return b;
     return gcd(b, a % b);
