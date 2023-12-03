@@ -8,8 +8,14 @@ void kire()
     // int sq = (int)sqrt(n);
     for (int i = 2; i <= n; i++)
     {
+        int c = 0;
         while (n % i == 0)
-            flag++, n/=i;
+            flag++, n /= i, c++;
+        if (c > 1)
+        {
+            printf("-1");
+            return;
+        }
     }
     // printf("%d\n", sq);
     if (flag == 2)
