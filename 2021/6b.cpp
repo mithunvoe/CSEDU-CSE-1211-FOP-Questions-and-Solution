@@ -29,13 +29,13 @@ void addJob(Node *&head)
     scanf("%d", &jb.id);
     printf("Enter Name: ");
     // fgets(jb.file.name, 100, stdin);
-    scanf("%c", &dummy);// this one is dummy
+    scanf("%c", &dummy); // this one is dummy
     scanf("%[^\n]", jb.file.name);
     // scanf("%d", &jb.file.f);
     printf("Page size A4 or legal(0/1): ");
     scanf("%d", &jb.file.size);
     printf("Enter Content: ");
-    scanf("%c", &dummy); //another dummy input
+    scanf("%c", &dummy); // another dummy input
     scanf("%[^\n]", jb.file.content);
 
     // fgets(jb.file.content, 6968, stdin);
@@ -63,7 +63,7 @@ void addJob(Node *&head)
 void printOldest(Node *&head)
 {
     Job jb = head->job;
-    printf("Job ID: %d\nName: %s\nPage Size: %s\nContent: %s\nNumber of Copies: %d\nBoth Sided? %s\n", jb.id, jb.file.name, (jb.file.size?"Legal":"A4"), jb.file.content, jb.copyNumber, (jb.bothSided ? "Yes" : "No"));
+    printf("Job ID: %d\nName: %s\nPage Size: %s\nContent: %s\nNumber of Copies: %d\nBoth Sided? %s\n", jb.id, jb.file.name, (jb.file.size ? "Legal" : "A4"), jb.file.content, jb.copyNumber, (jb.bothSided ? "Yes" : "No"));
 }
 void abortJob(Node *&head, int jobId)
 {

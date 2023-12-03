@@ -9,7 +9,7 @@ ANSWER:
 #include <stdio.h>
 #include <math.h>
 #define S 1000
-// #define maxi(x, y) x > y ? x : y;  // idk why it wasn't working, thats why made a function with the same name
+// #define maxi(x, y) x > y ? x : y  // idk why it wasn't working, thats why made a function with the same name
 int maxi(int x, int y)
 {
     if (x > y)

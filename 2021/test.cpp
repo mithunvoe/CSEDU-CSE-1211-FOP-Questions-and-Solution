@@ -3,7 +3,7 @@
 
 void kire()
 {
-    
+    printf("sdfsdf", 3);
 }
 
 int main()

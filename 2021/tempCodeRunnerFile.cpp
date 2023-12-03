@@ -1,0 +1,2 @@
+
+        // fprintf(opf, "%c", c);
