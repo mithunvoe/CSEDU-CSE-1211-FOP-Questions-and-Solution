@@ -20,7 +20,7 @@ void reverse(char s[], int ln)
 }
 void kire()
 {
-    char s1[101], s2[101], ans[101];
+    char s1[101], s2[101], ans[102];
     int l1 = 0, l2 = 0;
     scanf(" %s", s1);
     scanf(" %s", s2);
@@ -48,6 +48,9 @@ void kire()
         sm %= 10;
         ans[i] = sm + '0';
     }
+    if (carry)
+        ans[n++] = carry + '0';
+
     reverse(ans, n);
     printf("%s", ans);
 }
