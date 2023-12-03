@@ -15,6 +15,7 @@ void reverse(char s[])
 void kire()
 {
     char s[101], c;
+    
     FILE *inf, *opf;
     inf = fopen("in.txt", "r");
     opf = fopen("out.txt", "w");
